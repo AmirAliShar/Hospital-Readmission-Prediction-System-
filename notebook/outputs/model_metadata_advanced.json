@@ -1,0 +1,28 @@
+{
+  "model_name": "Logistic Regression (Class-Balanced L2)",
+  "model_version": "2.1-advanced",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "dataset_total_encounters": 101766,
+  "unique_patients": 69987,
+  "target": "readmitted_binary (<30 days)",
+  "positive_rate_percent": 8.98,
+  "features_numeric_count": 31,
+  "features_categorical_count": 4,
+  "total_transformed_features": 52,
+  "train_samples": 48992,
+  "val_samples": 10499,
+  "test_samples": 10499,
+  "evaluation_metrics": {
+    "ROC-AUC": 0.6094,
+    "PR-AUC": 0.1436,
+    "Recall (Sens.)": 0.5302,
+    "Specificity": 0.6124,
+    "Precision": 0.1189,
+    "F1-Score": 0.1943,
+    "Accuracy": 0.605,
+    "Brier Score": 0.2381,
+    "Log Loss": 0.6703
+  },
+  "decision_threshold": 0.5,
+  "training_date": "2026-10-16T07:09:04.253235"
+}

@@ -1,0 +1,212 @@
+{
+  "data_quality": {
+    "shape": [
+      101766,
+      50
+    ],
+    "n_rows": 101766,
+    "n_columns": 50,
+    "memory_mb": 198.8,
+    "missing_values": {
+      "weight": {
+        "count": 98569,
+        "percent": 96.9
+      },
+      "max_glu_serum": {
+        "count": 96420,
+        "percent": 94.7
+      },
+      "A1Cresult": {
+        "count": 84748,
+        "percent": 83.3
+      },
+      "medical_specialty": {
+        "count": 49949,
+        "percent": 49.1
+      },
+      "payer_code": {
+        "count": 40256,
+        "percent": 39.6
+      },
+      "race": {
+        "count": 2273,
+        "percent": 2.2
+      },
+      "diag_3": {
+        "count": 1423,
+        "percent": 1.4
+      },
+      "diag_2": {
+        "count": 358,
+        "percent": 0.4
+      },
+      "diag_1": {
+        "count": 21,
+        "percent": 0.0
+      }
+    },
+    "duplicates": 0,
+    "column_types": {
+      "object": 37,
+      "int64": 13
+    }
+  },
+  "target_info": {
+    "original_distribution": {
+      "NO": 54864,
+      ">30": 35545,
+      "<30": 11357
+    },
+    "binary_distribution": {
+      "0": 90409,
+      "1": 11357
+    },
+    "positive_rate": 11.16,
+    "imbalance_ratio": 7.96
+  },
+  "age_distribution": {
+    "[70-80)": 17749,
+    "[60-70)": 15688,
+    "[50-60)": 12351,
+    "[80-90)": 11110,
+    "[40-50)": 6828,
+    "[30-40)": 2692,
+    "[90-100)": 1761,
+    "[20-30)": 1121,
+    "[10-20)": 534,
+    "[0-10)": 153
+  },
+  "age_readmission_rate": {
+    "[0-10)": 1.96,
+    "[10-20)": 4.87,
+    "[20-30)": 7.4,
+    "[30-40)": 6.98,
+    "[40-50)": 7.41,
+    "[50-60)": 7.12,
+    "[60-70)": 9.02,
+    "[70-80)": 10.24,
+    "[80-90)": 10.79,
+    "[90-100)": 9.54
+  },
+  "gender_distribution": {
+    "Female": 37239,
+    "Male": 32748
+  },
+  "gender_readmission_rate": {
+    "Female": 9.04,
+    "Male": 8.92
+  },
+  "race_distribution": {
+    "Caucasian": 52386,
+    "AfricanAmerican": 12639,
+    "Unknown": 1821,
+    "Hispanic": 1504,
+    "Other": 1149,
+    "Asian": 488
+  },
+  "race_readmission_rate": {
+    "AfricanAmerican": 8.67,
+    "Asian": 8.4,
+    "Caucasian": 9.21,
+    "Hispanic": 8.18,
+    "Other": 6.88,
+    "Unknown": 6.7
+  },
+  "diagnosis_distribution": {
+    "Circulatory": 21391,
+    "Other": 12132,
+    "Respiratory": 9491,
+    "Digestive": 6488,
+    "Diabetes": 5748,
+    "Injury": 4694,
+    "Musculoskeletal": 4064,
+    "Genitourinary": 3441,
+    "Neoplasms": 2538
+  },
+  "diagnosis_readmission_rate": {
+    "Circulatory": 9.68,
+    "Diabetes": 9.12,
+    "Digestive": 8.01,
+    "Genitourinary": 8.98,
+    "Injury": 10.8,
+    "Musculoskeletal": 8.39,
+    "Neoplasms": 9.06,
+    "Other": 8.99,
+    "Respiratory": 7.3
+  },
+  "time_in_hospital_stats": {
+    "mean": 4.27,
+    "median": 3.0,
+    "std": 2.93,
+    "distribution": {
+      "1": 10468,
+      "2": 12183,
+      "3": 12493,
+      "4": 9423,
+      "5": 6699,
+      "6": 5050,
+      "7": 3903,
+      "8": 2842,
+      "9": 1911,
+      "10": 1507,
+      "11": 1189,
+      "12": 916,
+      "13": 761,
+      "14": 642
+    }
+  },
+  "num_medications_stats": {
+    "mean": 15.67,
+    "median": 14.0,
+    "std": 8.29
+  },
+  "num_lab_procedures_stats": {
+    "mean": 42.88,
+    "median": 44.0
+  },
+  "emergency_visits_stats": {
+    "mean": 0.1,
+    "zero_pct": 92.7
+  },
+  "outpatient_visits_stats": {
+    "mean": 0.28,
+    "zero_pct": 87.0
+  },
+  "feature_correlations": {
+    "time_in_hospital": 0.0558,
+    "num_lab_procedures": 0.0321,
+    "num_procedures": -0.0003,
+    "num_medications": 0.0362,
+    "number_outpatient": 0.0086,
+    "number_emergency": 0.028,
+    "number_inpatient": 0.1003,
+    "number_diagnoses": 0.0456,
+    "age_numeric": 0.0471,
+    "total_past_admissions": 0.0587,
+    "n_med_changes": 0.0223,
+    "polypharmacy": 0.0276,
+    "diabetesMed_binary": 0.0277,
+    "change_binary": 0.0145,
+    "insulin_change": 0.0215,
+    "A1C_abnormal": 0.0158,
+    "max_glu_abnormal": 0.0107,
+    "admission_type_id": -0.0023
+  },
+  "charts": [
+    "target_distribution.png",
+    "age_analysis.png",
+    "gender_race_analysis.png",
+    "diagnosis_analysis.png",
+    "distributions.png",
+    "visits_stay_analysis.png",
+    "missing_values.png",
+    "correlation_heatmap.png"
+  ],
+  "evaluation_charts": [
+    "confusion_matrix.png",
+    "roc_curves.png",
+    "pr_curves.png",
+    "model_comparison.png",
+    "feature_importance.png"
+  ]
+}

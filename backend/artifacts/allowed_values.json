@@ -1,0 +1,79 @@
+{
+  "gender": [
+    "Female",
+    "Male"
+  ],
+  "race": [
+    "AfricanAmerican",
+    "Asian",
+    "Caucasian",
+    "Hispanic",
+    "Other",
+    "Unknown"
+  ],
+  "diag_1_category": [
+    "Circulatory",
+    "Diabetes",
+    "Digestive",
+    "Genitourinary",
+    "Injury",
+    "Musculoskeletal",
+    "Neoplasms",
+    "Other",
+    "Respiratory"
+  ],
+  "admission_risk_level": [
+    "None",
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "admission_type_id": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "numeric_ranges": {
+    "time_in_hospital": {
+      "min": 1,
+      "max": 14
+    },
+    "num_lab_procedures": {
+      "min": 1,
+      "max": 132
+    },
+    "num_procedures": {
+      "min": 0,
+      "max": 6
+    },
+    "num_medications": {
+      "min": 1,
+      "max": 81
+    },
+    "number_outpatient": {
+      "min": 0,
+      "max": 42
+    },
+    "number_emergency": {
+      "min": 0,
+      "max": 76
+    },
+    "number_inpatient": {
+      "min": 0,
+      "max": 21
+    },
+    "number_diagnoses": {
+      "min": 1,
+      "max": 16
+    },
+    "age_numeric": {
+      "min": 5,
+      "max": 95
+    }
+  }
+}

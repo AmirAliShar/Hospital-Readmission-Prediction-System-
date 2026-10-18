@@ -1,0 +1,49 @@
+{
+  "model_name": "Logistic Regression",
+  "model_version": "2.0",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "dataset_rows": 69987,
+  "dataset_columns": 46,
+  "target": "readmitted_binary (1 = readmitted within 30 days)",
+  "positive_rate_percent": 8.98,
+  "feature_names_numeric": [
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses",
+    "age_numeric",
+    "total_past_admissions",
+    "n_med_changes",
+    "polypharmacy",
+    "diabetesMed_binary",
+    "change_binary",
+    "insulin_change",
+    "A1C_abnormal",
+    "max_glu_abnormal",
+    "admission_type_id"
+  ],
+  "feature_names_categorical": [
+    "gender",
+    "race",
+    "diag_1_category",
+    "admission_risk_level"
+  ],
+  "feature_count": 22,
+  "train_size": 55989,
+  "test_size": 13998,
+  "selection_metric": "ROC-AUC",
+  "selection_rationale": "Logistic Regression selected for highest validation ROC-AUC among 4 models evaluated. ROC-AUC is appropriate for imbalanced healthcare prediction tasks as it measures discrimination ability across all thresholds.",
+  "decision_threshold": 0.5,
+  "training_date": "2026-10-15T18:10:28.753358",
+  "random_seed": 42,
+  "packages": {
+    "scikit-learn": "1.8.0",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "xgboost": "3.1.0"
+  }
+}
